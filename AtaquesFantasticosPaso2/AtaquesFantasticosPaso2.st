@@ -97,7 +97,7 @@ tienePuntosDeVida: unaCantidadDePuntosDeVida
 	(unaCantidadDePuntosDeVida = puntosDeVida) ifTrue: [^true] ifFalse: [^false]! !
 
 
-!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/18/2022 22:08:46'!
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/19/2022 17:17:02'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -211,7 +211,7 @@ usarHacha
 	dañoAInfligir := 10*pv.! !
 
 
-!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/18/2022 22:08:46'!
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/19/2022 17:17:03'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -324,7 +324,7 @@ tienePuntosDeVida: unaCantidadDePuntosDeVida
 	(unaCantidadDePuntosDeVida = puntosDeVida) ifTrue: [^true] ifFalse: [^false]! !
 
 
-!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/18/2022 22:08:46'!
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/19/2022 17:17:03'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -836,60 +836,58 @@ DenotativeObject subclass: #OrquestadorDeCombates
 OrquestadorDeCombates class
 	instanceVariableNames: 'contadorDeRondas primerBando segundoBando resultado'!
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 21:47:15'!
-debeContinuarElCombate
-	((self estanTodosEnCombate: primerBando) xor: (self estanTodosEnCombate: segundoBando)) ifTrue: [^false] ifFalse: [^true].! !
+!OrquestadorDeCombates class methodsFor: 'resultados' stamp: 'AB 9/19/2022 17:14:25'!
+definirResultado
+	(self estanTodosFueraDeCombate: primerBando) ifTrue: [resultado := 'Gano 2'] ifFalse: [resultado := 'Gano 1'].! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 20:53:45'!
-desarrollarDuranteRondas: unaCantidadDeRondas
-	[(self debeContinuarElCombate) and: (contadorDeRondas <= unaCantidadDeRondas)] whileTrue: [self ejecutarRonda].
-	(self esElGanador: primerBando) ifTrue: [resultado := 'Gano 1'].
-	(self esElGanador: segundoBando) ifTrue: [resultado := 'Gano 2'].
-	^resultado! !
-
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 18:09:46'!
+!OrquestadorDeCombates class methodsFor: 'resultados' stamp: 'AB 9/18/2022 18:09:46'!
 devolverResultado
 	^resultado! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 20:14:00'!
+!OrquestadorDeCombates class methodsFor: 'resultados' stamp: 'AB 9/18/2022 22:47:00'!
 devolverRondas
-	^(contadorDeRondas - 1).! !
+	^contadorDeRondas.! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 19:35:49'!
+
+!OrquestadorDeCombates class methodsFor: 'combate' stamp: 'AB 9/19/2022 17:14:19'!
+debeContinuarElCombate
+	| debeContinuar |
+	debeContinuar := ((self estanTodosFueraDeCombate: primerBando) xor: (self estanTodosFueraDeCombate: segundoBando)) not.
+	(debeContinuar) ifFalse: [self definirResultado].
+	^debeContinuar! !
+
+!OrquestadorDeCombates class methodsFor: 'combate' stamp: 'AB 9/18/2022 22:46:28'!
+desarrollarDuranteRondas: unaCantidadDeRondas
+	[(self debeContinuarElCombate) and: (contadorDeRondas < unaCantidadDeRondas)] whileTrue: [self ejecutarRonda].
+	^resultado! !
+
+!OrquestadorDeCombates class methodsFor: 'combate' stamp: 'AB 9/18/2022 19:35:49'!
 ejecutarRonda
 	primerBando do: [:unCombatiente | unCombatiente atacar].
 	segundoBando do: [:unCombatiente | unCombatiente atacar].
 	contadorDeRondas := contadorDeRondas + 1.! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 21:53:35'!
-esElGanador: unBando
-	| otroBando |
-	(unBando = primerBando) ifTrue: [otroBando := segundoBando] ifFalse: [otroBando := primerBando].
-	(((self estanTodosEnCombate: unBando) = true) and: ((self estanTodosEnCombate: otroBando) = false)) ifTrue: [^true].
-	^false! !
-
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 22:08:12'!
-estanTodosEnCombate: unBando
-	| estanTodosEnCombate estanTodosFueraDeCombate |
-	estanTodosEnCombate := (unBando select: [:unCombatiente | unCombatiente estaFueraDeCombate]) isEmpty.
+!OrquestadorDeCombates class methodsFor: 'combate' stamp: 'AB 9/18/2022 22:52:47'!
+estanTodosFueraDeCombate: unBando
+	| estanTodosFueraDeCombate |
 	estanTodosFueraDeCombate := (unBando reject: [:unCombatiente | unCombatiente estaFueraDeCombate]) isEmpty.
-	((estanTodosFueraDeCombate not) or: estanTodosEnCombate) ifTrue: [^true] ifFalse: [^false]! !
+	(estanTodosFueraDeCombate) ifTrue: [^true] ifFalse: [^false]! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'AB 9/18/2022 20:08:03'!
+!OrquestadorDeCombates class methodsFor: 'combate' stamp: 'AB 9/18/2022 22:46:21'!
 prepararCombate: unPrimerBando vs: unSegundoBando
 	primerBando := unPrimerBando.
 	segundoBando := unSegundoBando.
-	contadorDeRondas := 1.
+	contadorDeRondas := 0.
 	primerBando do: [:unCombatiente | unCombatiente enemigos: segundoBando].
 	segundoBando do: [:unCombatiente | unCombatiente enemigos: primerBando].
 	resultado := 'Indeterminado'.! !
 
 
-!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/18/2022 22:08:47'!
+!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'AB 9/19/2022 17:17:03'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
-	contadorDeRondas := 3.
+	contadorDeRondas := 2.
 	primerBando := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
 	segundoBando := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
 	resultado := 'Indeterminado'.! !
