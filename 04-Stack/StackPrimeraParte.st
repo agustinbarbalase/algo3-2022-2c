@@ -74,6 +74,13 @@ test06StackTopElementIsTheLastPushElement
 	self deny: (stack isEmpty).
 	self assert: stack top equals: pushElement.! !
 
+!StackTest methodsFor: 'testing' stamp: 'AB 10/7/2022 18:52:51'!
+test07StackTopElementInAEmptyStackIsAnError
+	| stack |
+	stack := Stack new.
+	
+	self assert: stack top equals: Stack cannotSeeTop.! !
+
 
 !classDefinition: #Stack category: 'StackPrimeraParte'!
 Object subclass: #Stack
