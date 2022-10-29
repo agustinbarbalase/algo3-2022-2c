@@ -1,0 +1,4083 @@
+
+
+----STARTUP---- (29 October 2022 12:21:51) as /home/abarbalase/cuis-university/CuisUniversity-5481.image!
+
+
+----SNAPSHOT----(29 October 2022 12:22:55) mars-rover.image priorSource: 7059698!
+
+TestCase subclass: #TestMarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #TestMarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 12:23:56'!
+TestCase subclass: #TestMarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 12:28:25'!
+Object subclass: #MarsRover
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!TestMarsRover methodsFor: 'nil' stamp: 'AB 10/29/2022 12:28:18'!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: ''.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: (marsrover cardinalPoint) equals: 'N'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:28:40'!
+ERROR!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:28:40'!
+ERROR!
+!MarsRover class methodsFor: 'instance creation' stamp: 'AB 10/29/2022 12:28:49'!
+initializeWithThePosition: aPoint andTheCardinalPoint: aString 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aString ! !
+!MarsRover class methodsFor: 'instance creation' stamp: 'AB 10/29/2022 12:29:05' prior: 50552307!
+initializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	^self new initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint. ! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:29:07'!
+ERROR!
+
+!classDefinition: #MarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 12:29:20'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'point'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 12:29:20'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'point cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 12:29:20'!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	self shouldBeImplemented.
+	point := aPoint.
+	cardinalPoint := aCardinalPoint.! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 12:29:26' prior: 50552342!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	point := aPoint.
+	cardinalPoint := aCardinalPoint.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:29:31'!
+ERROR!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:29:43'!
+executeCommand: aString 
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:30:00' prior: 50552359!
+executeCommand: aStringOfCommands
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:30:02'!
+ERROR!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:30:09'!
+position
+	self shouldBeImplemented.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:30:25' prior: 50552371!
+position
+	^point.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:30:28'!
+ERROR!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:30:34'!
+cardinalPoint
+	self shouldBeImplemented.
+	^cardinalPoint! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:30:37' prior: 50552382!
+cardinalPoint
+	^cardinalPoint! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:30:39'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:30:42'!
+PASSED!
+
+!classDefinition: #MarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 12:31:45'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:31:45' prior: 50552376!
+position
+	^position.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:31:45' prior: 50552350!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	position := aPoint.
+	cardinalPoint := aCardinalPoint.! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:32:36'!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'f'.
+	self assert: (marsrover position) equals: (1 @ 4).
+	self assert: (marsrover cardinalPoint) equals: 'N'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:32:39'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:32:39'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:32:39'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:32:49'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:34:24' prior: 50552364!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position + (0@1)]
+	! !
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:34:26'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:34:37'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:34:37'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:34:37'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:34:59' prior: 50552435!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)]
+	! !
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:35:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:35:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:35:02'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:35:19'!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'b'.
+	self assert: (marsrover position) equals: (1 @ 2).
+	self assert: (marsrover cardinalPoint) equals: 'N'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:35:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:35:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:35:21'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:35:21'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:35:30'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:36:05' prior: 50552451!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	! !
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:36:07'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:36:09'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:36:09'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:36:09'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:36:36'!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'l'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: (marsrover cardinalPoint) equals: 'E'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:36:40'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:36:40'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:37:20' prior: 50552487!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [position := 'E'].
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:37:25' prior: 50552528!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [cardinalPoint := 'E'].
+	
+	! !
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:37:27'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:37:30'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:37:30'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:37:30'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:37:30'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:38:10'!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'r'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: (marsrover cardinalPoint) equals: 'E'.! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:38:17' prior: 50552505!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'l'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: (marsrover cardinalPoint) equals: 'W'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:38:20'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:38:20'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:38:20'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:38:20'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:38:20'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:38:27'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:38:54' prior: 50552539!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [cardinalPoint := 'W'].
+	(aStringOfCommands = 'r') ifTrue: [cardinalPoint := 'E'].
+	! !
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:38:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:38:59'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:39:03'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:39:03'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:39:03'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:39:03'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:39:03'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:39:37'!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'rl'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: (marsrover cardinalPoint) equals: 'N'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:39:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:39:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:39:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:39:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:39:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:39:40'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:39:55' prior: 50552626!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'rrl'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: (marsrover cardinalPoint) equals: 'E'.! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:39:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:39:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:39:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:39:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:39:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:39:58'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:39:58'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:40:27' prior: 50552651!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'rrl'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:40:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:40:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:40:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:40:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:40:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:40:32'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:40:32'!
+FAILURE!
+
+FixedGregorianDate theEndOfTime.!
+
+theBeginningOfTime!
+
+FixedGregorianDate theBeginningOfTime.!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:45:00' prior: 50552597!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [cardinalPoint := 'W'].
+	(aStringOfCommands = 'r') ifTrue: [cardinalPoint := 'E'].
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:47:29' prior: 50552710!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [self rotateToLeft].
+	(aStringOfCommands = 'r') ifTrue: [self rotateToRight].
+	
+	! !
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:47:35'!
+FAILURE!
+!MarsRover methodsFor: 'nil' stamp: 'AB 10/29/2022 12:49:05'!
+rotateToLeft
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:49:11'!
+rotateToRight
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:51:21' prior: 50552737!
+rotateToLeft
+	(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'W'].
+	(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'N'].
+	(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'E'].
+	(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'S']! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:51:31' prior: 50552744!
+rotateToLeft
+	(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'W'].
+	(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'N'].
+	(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'E'].
+	(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'S'].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:51:39' prior: 50552740!
+rotateToRight
+	(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'W'].
+	(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'N'].
+	(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'E'].
+	(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'S'].
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:52:00' prior: 50552766!
+rotateToRight
+	(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'E'].
+	(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'S'].
+	(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'W'].
+	(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'N'].
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:52:01' prior: 50552777!
+rotateToRight
+	(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'E'].
+	(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'S'].
+	(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'W'].
+	(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'N'].
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:52:05'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:52:05'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:52:05'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:52:05'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:52:05'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:52:05'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:53:12'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:53:12'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:53:44' prior: 50552572!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'l'.
+	self assert: (marsrover position) equals: (1 @ 3).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:53:48'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:53:48'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:53:48'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:53:48'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:53:48'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:53:48'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:53:56'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:55:06'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:55:47' prior: 50552755!
+rotateToLeft! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:56:17' prior: 50552723!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [
+		(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'W'].
+		(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'N'].
+		(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'E'].
+		(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'S'].	
+	].
+	(aStringOfCommands = 'r') ifTrue: [self rotateToRight].
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:56:58' prior: 50552852!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [
+		(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'W'].
+		(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'N'].
+		(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'E'].
+		(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'S'].	
+	].
+	(aStringOfCommands = 'r') ifTrue: [
+		(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'E'].
+		(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'S'].
+		(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'W'].
+		(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'N'].	
+	].
+	
+	! !
+
+!methodRemoval: MarsRover #rotateToLeft stamp: 'AB 10/29/2022 12:57:04'!
+rotateToLeft!
+
+!methodRemoval: MarsRover #rotateToRight stamp: 'AB 10/29/2022 12:57:06'!
+rotateToRight
+	(cardinalPoint = 'N') ifTrue: [cardinalPoint := 'E'].
+	(cardinalPoint = 'E') ifTrue: [cardinalPoint := 'S'].
+	(cardinalPoint = 'S') ifTrue: [cardinalPoint := 'W'].
+	(cardinalPoint = 'W') ifTrue: [cardinalPoint := 'N'].
+	!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:57:11'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:57:11'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:57:11'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:57:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:57:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:57:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:57:18'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 12:59:47' prior: 50552871!
+executeCommand: aStringOfCommands
+	(aStringOfCommands = 'f') ifTrue: [position := position + (0@1)].
+	(aStringOfCommands = 'b') ifTrue: [position := position - (0@1)].
+	(aStringOfCommands = 'l') ifTrue: [
+		(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'W')].
+		(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'N')].
+		(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'E')].
+		(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'S')].	
+	].
+	(aStringOfCommands = 'r') ifTrue: [
+		(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'E')].
+		(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'S')].
+		(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'W')].
+		(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'N')].	
+	].
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 12:59:51'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 12:59:51'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 12:59:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 12:59:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 12:59:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:59:52'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 12:59:52'!
+FAILURE!
+
+'ABC' map: [:a | a + 1].!
+
+'ABC' collect: [:a | a + 1].!
+
+'ABC' collect: [:a | a asLowercase].!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:03:56'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:03:56'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:03:56'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:03:56'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:03:56'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:03:56'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:03:56'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:04:39' prior: 50552926!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = 'f') ifTrue: [position := position + (0@1)].
+		(aCommand = 'b') ifTrue: [position := position - (0@1)].
+		(aCommand = 'l') ifTrue: [
+			(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'W')].
+			(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'N')].
+			(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'E')].
+			(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'S')].	
+		].
+		(aCommand = 'r') ifTrue: [
+			(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'E')].
+			(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'S')].
+			(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'W')].
+			(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'N')].	
+		].	
+	]
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:04:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:04:43'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:04:43'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:04:43'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:04:43'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:04:43'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:07:44'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:07:44'!
+FAILURE!
+
+marsrover cardinalPoint!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:14:49' prior: 50552988!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = 'f') ifTrue: [position := position + (0@1)].
+		(aCommand = 'b') ifTrue: [position := position - (0@1)].
+		(aCommand = 'l') ifTrue: [	
+			(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'W')].
+			(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'N')].
+			(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'E')].
+			(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'S')].
+		].
+		(aCommand = 'r') ifTrue: [
+			(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'E')].
+			(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'S')].
+			(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'W')].
+			(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'N')].	
+		].	
+	]
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:15:16' prior: 50553035!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = 'f') ifTrue: [position := position + (0@1)].
+		(aCommand = 'b') ifTrue: [position := position - (0@1)].
+		(aCommand = 'l') ifTrue: [	self rotateToLeft].
+		(aCommand = 'r') ifTrue: [
+			(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'E')].
+			(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'S')].
+			(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'W')].
+			(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'N')].	
+		].	
+	]
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:15:30'!
+rotateToLeft
+	(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'W')].
+	(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'N')].
+	(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'E')].
+	(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'S')].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:15:51' prior: 50553062!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = 'f') ifTrue: [position := position + (0@1)].
+		(aCommand = 'b') ifTrue: [position := position - (0@1)].
+		(aCommand = 'l') ifTrue: [	self rotateToLeft].
+		(aCommand = 'r') ifTrue: [self rotateToRight].	
+	]
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:16:06'!
+rotateToRight
+	(cardinalPoint = 'N') ifTrue: [^(cardinalPoint := 'E')].
+	(cardinalPoint = 'E') ifTrue: [^(cardinalPoint := 'S')].
+	(cardinalPoint = 'S') ifTrue: [^(cardinalPoint := 'W')].
+	(cardinalPoint = 'W') ifTrue: [^(cardinalPoint := 'N')].	
+		! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:16:11'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:16:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:16:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:16:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:16:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:16:11'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:16:21'!
+FAILURE!
+
+'A' collect: [:a | a asLowercase]!
+
+'f' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^1].
+	(aCommand = 'b') ifTrue: [^2].
+	(aCommand = 'l') ifTrue: [	^3].
+	(aCommand = 'r') ifTrue: [^4].
+	^0
+]!
+
+'F' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^1].
+	(aCommand = 'b') ifTrue: [^2].
+	(aCommand = 'l') ifTrue: [	^3].
+	(aCommand = 'r') ifTrue: [^4].
+	^0
+]!
+
+'f' collect: [:aCommand | 
+	aCommand
+]!
+
+'f' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^1].
+	(aCommand = 'b') ifTrue: [^2].
+	(aCommand = 'l') ifTrue: [	^3].
+	(aCommand = 'r') ifTrue: [^4].
+	^0
+]!
+
+'ff' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^1].
+	(aCommand = 'b') ifTrue: [^2].
+	(aCommand = 'l') ifTrue: [	^3].
+	(aCommand = 'r') ifTrue: [^4].
+	^0
+]!
+
+'ff' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [1].
+	0
+]!
+
+'ff' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^1].
+	0
+]!
+
+'ff' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^1].
+]!
+
+'ff' collect: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^true].
+]!
+
+'ff' collectInArray: [:aCommand | 
+	(aCommand = 'f') ifTrue: [^true].
+]!
+
+'fb' collectInArray: [:aCommand | 
+	aCommand
+]!
+
+'fb' collectInArray: [:aCommand | 
+	aCommand = 'f'
+]!
+
+'fb' collectInArray: [:aCommand | 
+	aCommand = '$f'
+]!
+
+'fb' collectInArray: [:aCommand | 
+	aCommand = $f
+]!
+
+'fb' collectInArray: [:aCommand | 
+	(aCommand = $f) ifTrue: [^true].
+	^false
+]!
+
+'fb' collectInArray: [:aCommand | 
+	(aCommand = $f) ifTrue: [true].
+	false
+]!
+
+'fb' collectInArray: [:aCommand | 
+	(aCommand = $f) ifTrue: [^true].
+	false
+]!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:25:17' prior: 50553092!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [position := position + (0@1)].
+		(aCommand = $b) ifTrue: [position := position - (0@1)].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight].	
+	]
+	
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:25:19'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:25:19'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:25:19'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:25:19'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:25:19'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:25:19'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:26:00'!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lf'.
+	self assert: (marsrover position) equals: (0 @ 3).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:26:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:26:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:26:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:26:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:26:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:26:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:26:04'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:26:04'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:26:35' prior: 50553180!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [position := position - (0@1)].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight].	
+	]
+	
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:26:45'!
+forward
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:28:27' prior: 50553249!
+forward
+	(cardinalPoint = 'N') ifTrue: [^(position := position + (0@1))].
+	(cardinalPoint = 'E') ifTrue: [^(position := position - (1@0))].
+	(cardinalPoint = 'S') ifTrue: [^(position := position - (0@1))].
+	(cardinalPoint = 'W') ifTrue: [^(position := position + (1@0))].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:28:41' prior: 50553237!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight].	
+	]
+	
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:29:01'!
+backward
+	(cardinalPoint = 'N') ifTrue: [^(position := position - (0@1))].
+	(cardinalPoint = 'E') ifTrue: [^(position := position + (1@0))].
+	(cardinalPoint = 'S') ifTrue: [^(position := position + (0@1))].
+	(cardinalPoint = 'W') ifTrue: [^(position := position - (1@0))].! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:29:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:29:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:29:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:29:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:29:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:29:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:29:12'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:29:12'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:29:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:29:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:29:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:29:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:29:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:29:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:29:32'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:29:32'!
+FAILURE!
+
+marsrover cardinalPoint!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:30:42' prior: 50553207!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lf'.
+	self assert: (marsrover position) equals: (0 @ 3).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:30:56' prior: 50553253!
+forward
+	(cardinalPoint = 'N') ifTrue: [^(position := position + (0@1))].
+	(cardinalPoint = 'E') ifTrue: [^(position := position + (1@0))].
+	(cardinalPoint = 'S') ifTrue: [^(position := position - (0@1))].
+	(cardinalPoint = 'W') ifTrue: [^(position := position - (1@0))].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:31:41' prior: 50553276!
+backward
+	(cardinalPoint = 'N') ifTrue: [^(position := position - (0@1))].
+	(cardinalPoint = 'E') ifTrue: [^(position := position - (1@0))].
+	(cardinalPoint = 'S') ifTrue: [^(position := position + (0@1))].
+	(cardinalPoint = 'W') ifTrue: [^(position := position + (1@0))].! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:31:44'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:31:56' prior: 50553327!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lb'.
+	self assert: (marsrover position) equals: (2 @ 3).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:31:58'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:32:06' prior: 50553379!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lf'.
+	self assert: (marsrover position) equals: (0 @ 3).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:32:22' prior: 50553409!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:32:45' prior: 50552679!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:33:07' prior: 50552561!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (marsrover cardinalPoint) equals: 'E'.! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:33:19' prior: 50553442!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:33:29' prior: 50552818!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'l'.
+	self assert: (marsrover position) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:33:38' prior: 50553464!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:34:20' prior: 50552464!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:34:54' prior: 50552414!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:35:29' prior: 50552292!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:35:32'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:35:54'!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'ñ'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:35:57'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:36:07' prior: 50553536!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lllfbsñ'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:36:10'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:36:40' prior: 50553568!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommand: 'lfñbr'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:36:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:36:43'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:36:43'!
+FAILURE!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:37:16' prior: 50553265!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight].	
+	]
+	
+	
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:38:00' prior: 50553614!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight].	
+		^self error: 'Command Invalid'.
+	]
+	
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:38:03'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:38:03'!
+ERROR!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:38:10'!
+ERROR!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:39:13' prior: 50553626!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight].	
+		self error: 'Command Invalid'.
+	]
+	
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:39:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:39:21'!
+ERROR!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:39:31'!
+ERROR!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:41:09' prior: 50553660!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight] ifFalse: [^self error: 'Command Invalid']
+	]
+	
+	
+	! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 13:41:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:41:12'!
+ERROR!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 13:41:12'!
+ERROR!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 13:41:12'!
+ERROR!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 13:41:12'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 13:41:12'!
+ERROR!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 13:41:12'!
+ERROR!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 13:41:12'!
+ERROR!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 13:41:19'!
+ERROR!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:46:06' prior: 50553694!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight] ifFalse: [^self error: 'Command Invalid']
+	]
+	
+	
+	! !
+
+Object subclass: #MarsRoveCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoveCommands category: 'MarsRover' stamp: 'AB 10/29/2022 13:48:06'!
+Object subclass: #MarsRoveCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRenamed: #MarsRoveCommands as: #MarsRoverCommands stamp: 'AB 10/29/2022 13:48:17'!
+Smalltalk renameClassNamed: #MarsRoveCommands as: #MarsRoverCommands!
+
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Forward category: 'MarsRover' stamp: 'AB 10/29/2022 13:48:32'!
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Backward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Backward category: 'MarsRover' stamp: 'AB 10/29/2022 13:48:40'!
+MarsRoverCommands subclass: #Backward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Left category: 'MarsRover' stamp: 'AB 10/29/2022 13:48:45'!
+MarsRoverCommands subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Right category: 'MarsRover' stamp: 'AB 10/29/2022 13:48:48'!
+MarsRoverCommands subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!Backward methodsFor: 'no messages' stamp: 'AB 10/29/2022 13:49:15'!
+execute: anArgument
+	! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:04'!
+executeCommands: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight] ifFalse: [^self error: 'Command Invalid']
+	]
+	
+	
+	! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:04' prior: 50553420!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:04' prior: 50553431!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:04' prior: 50553498!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:04' prior: 50553487!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:05' prior: 50553582!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lfñbr'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:05' prior: 50553476!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:05' prior: 50553509!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 13:51:05' prior: 50553453!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+
+!methodRemoval: MarsRover #executeCommand: stamp: 'AB 10/29/2022 13:51:05'!
+executeCommand: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | 
+		(aCommand = $f) ifTrue: [self forward].
+		(aCommand = $b) ifTrue: [self backward].
+		(aCommand = $l) ifTrue: [	self rotateToLeft].
+		(aCommand = $r) ifTrue: [self rotateToRight] ifFalse: [^self error: 'Command Invalid']
+	]
+	
+	
+	!
+
+'AB' do: [:a | a]!
+
+'AB' do: [:a | a asLowercase]!
+
+'AB' do: [:a | a asLowercase]!
+
+'AB' do: [:a | ^a asLowercase]!
+
+'AB' do: [:a | 
+	a = $a ifTrue: [^1].
+	a = $b ifTrue: [^2].
+	^0
+]!
+
+'AB' do: [:a | 
+	(a = $a) ifTrue: [^1].
+	(a = $b) ifTrue: [^2].
+	^0
+]!
+
+'AB' do: [:a | 
+	(a = $a) ifTrue: [1].
+	(a = $b) ifTrue: [2].
+	0
+]!
+
+'AB' do: [:a | 
+	(a = $a) ifTrue: [^1].
+	(a = $b) ifTrue: [2].
+	0
+]!
+
+'AB' collect: [:a | 
+	(a = $a) ifTrue: [^1].
+	(a = $b) ifTrue: [2].
+	0
+]!
+
+'AB' collect: [:a | 
+	(a = $a) ifTrue: [1].
+	(a = $b) ifTrue: [2].
+	0
+]!
+
+'AB' collect: [:a | 
+	(a = $a) ifTrue: [1].
+	(a = $b) ifTrue: [2].
+]!
+
+'AB' collect: [:a | 
+	(a = $a) ifTrue: [^1].
+	(a = $b) ifTrue: [^2].
+]!
+
+'AB' collect: [:a | 
+	(a = $a) ifTrue: [^1].
+	(a = $b) ifTrue: [^2].
+	^0
+]!
+
+'AB' collect: [:a | 
+	(a = $a) ifTrue: [^1].
+	(a = $b) ifTrue: [^2].
+	0
+]!
+
+'AB' collectInArray: [:a | 
+	a = $A ifTrue: [^1].
+	a = $B ifTrue: [^2].
+	^0	
+]!
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:52:07'!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^self forward].
+	(aCommand = $b) ifTrue: [^self backward].
+	(aCommand = $l) ifTrue: [^	self rotateToLeft].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	^self error: 'Command Invalid'.! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:52:35' prior: 50553804!
+executeCommands: aStringOfCommands
+	aStringOfCommands collect: [:aCommand | self executeCommand: aCommand ].! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 15:52:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 15:52:43'!
+ERROR!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 15:52:43'!
+ERROR!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:55:08' prior: 50553861!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: 'Command Invalid' equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 15:55:10'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 15:55:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 15:55:10'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:55:22' prior: 50553985!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: 'Command Invalid' equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 15:55:24'!
+PASSED!
+
+!classRemoval: #Forward stamp: 'AB 10/29/2022 15:55:35'!
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Backward stamp: 'AB 10/29/2022 15:55:38'!
+MarsRoverCommands subclass: #Backward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Left stamp: 'AB 10/29/2022 15:55:40'!
+MarsRoverCommands subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Right stamp: 'AB 10/29/2022 15:55:43'!
+MarsRoverCommands subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #MarsRoverCommands stamp: 'AB 10/29/2022 15:55:45'!
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover class methodsFor: 'error description' stamp: 'AB 10/29/2022 15:57:13'!
+CommandInvalidErrorDescription
+	^'Command Invalid'! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:57:50' prior: 50553946!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^self forward].
+	(aCommand = $b) ifTrue: [^self backward].
+	(aCommand = $l) ifTrue: [^	self rotateToLeft].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	^self error: (self class CommandInvalidErrorDescription).! !
+!MarsRover class methodsFor: 'error description' stamp: 'AB 10/29/2022 15:58:07'!
+commandInvalidErrorDescription
+	^'Command Invalid'! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:58:07' prior: 50554091!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^self forward].
+	(aCommand = $b) ifTrue: [^self backward].
+	(aCommand = $l) ifTrue: [^	self rotateToLeft].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	^self error: (self class commandInvalidErrorDescription).! !
+
+!methodRemoval: MarsRover class #CommandInvalidErrorDescription stamp: 'AB 10/29/2022 15:58:07'!
+CommandInvalidErrorDescription
+	^'Command Invalid'!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 15:58:54' prior: 50554022!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 15:59:06'!
+PASSED!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:00:02'!
+PASSED!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:00:40' prior: 50554107!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^self forward].
+	(aCommand = $b) ifTrue: [^self backward].
+	(aCommand = $l) ifTrue: [^	self rotateToLeft].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	self error: (self class commandInvalidErrorDescription).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:00:43'!
+PASSED!
+
+Object subclass: #MarsRoverCardinalPoint
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverCardinalPoint category: 'MarsRover' stamp: 'AB 10/29/2022 16:03:39'!
+Object subclass: #MarsRoverCardinalPoint
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCardinalPoint subclass: #North
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #North category: 'MarsRover' stamp: 'AB 10/29/2022 16:03:48'!
+MarsRoverCardinalPoint subclass: #North
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCardinalPoint subclass: #South
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #South category: 'MarsRover' stamp: 'AB 10/29/2022 16:03:54'!
+MarsRoverCardinalPoint subclass: #South
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCardinalPoint subclass: #West
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #West category: 'MarsRover' stamp: 'AB 10/29/2022 16:03:58'!
+MarsRoverCardinalPoint subclass: #West
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCardinalPoint subclass: #East
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #East category: 'MarsRover' stamp: 'AB 10/29/2022 16:04:01'!
+MarsRoverCardinalPoint subclass: #East
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!East methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:04:27'!
+rotateToLeft
+	^MarsRoverCardinalPoint south.! !
+!MarsRoverCardinalPoint methodsFor: 'nil' stamp: 'AB 10/29/2022 16:04:57'!
+south
+	^South new.! !
+
+!methodRemoval: MarsRoverCardinalPoint #south stamp: 'AB 10/29/2022 16:05:10'!
+south
+	^South new.!
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:05:20' prior: 50554263!
+rotateToLeft
+	^South new.! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:05:36'!
+rotateToRight
+	^North new.! !
+!North methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:05:57'!
+rotateToLeft
+	^East new.! !
+!North methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:06:13'!
+rotateToRight
+	^East new.! !
+!North methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:06:19' prior: 50554281!
+rotateToLeft
+	^West new.! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:06:30' prior: 50554274!
+rotateToLeft
+	^North new.! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:06:35' prior: 50554278!
+rotateToRight
+	^South new.! !
+!South methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:07:09'!
+rotateToLeft
+	^East new.! !
+!South methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:07:21'!
+rotateToRight
+	^West new.! !
+!West methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:07:30'!
+rotateToRight
+	^West new.! !
+!West methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:07:43'!
+rotateToLeft
+	^South new.! !
+!West methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:07:51' prior: 50554307!
+rotateToRight
+	^North new.! !
+!MarsRoverCardinalPoint methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:08:19'!
+rotateToLeft
+	self subclassResponsibility.! !
+!MarsRoverCardinalPoint methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:08:30'!
+rotateToRight
+	self subclassResponsibility.! !
+!MarsRover class methodsFor: 'instance creation' stamp: 'AB 10/29/2022 16:09:28' prior: 50552318!
+initializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	^self new initializeInitializeWithThePosition: aPoint andTheCardinalPoint: (MarsRoverCardinalPoint initializeWith: aCardinalPoint). ! !
+!MarsRoverCardinalPoint class methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:10:07'!
+initializeWith: aCardinalPoint
+	self subclassesDo: []! !
+
+----End fileIn of /home/abarbalase/Desktop/FIUBA/algo3/03-Numeros/Numeros-Ejercicio.st----!
+!MarsRoverCardinalPoint class methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:13:28' prior: 50554339!
+initializeWith: aCardinalPoint
+	^(self subclasses detect: [:aSubclass | aSubclass isYourCategory: aCardinalPoint]) new.! !
+!MarsRoverCardinalPoint class methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:15:53' prior: 50555492!
+initializeWith: aCardinalPoint
+	self subclasses detect: [:aSubclass | aSubclass isYourCategory: aCardinalPoint] 
+		ifFound: [:aFoundClass | ^(aFoundClass new)] 
+		ifNone: [^self error: (self thisCardinalPointDoesntExistsErrorDescription)].! !
+!MarsRoverCardinalPoint class methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:16:28'!
+thisCardinalPointDoesntExistsErrorDescription
+	^'This cardinal point doesn`t exists'! !
+!MarsRoverCardinalPoint class methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:16:53'!
+isYourCategory
+	self subclassResponsibility.! !
+!East class methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:17:20'!
+isYourCategory: aPoint
+	^(aPoint = 'E')! !
+!North class methodsFor: 'nil' stamp: 'AB 10/29/2022 16:17:28'!
+isYourCategory: aPoint
+	^(aPoint = 'N')! !
+!South class methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:17:34'!
+isYourCategory: aPoint
+	^(aPoint = 'S')! !
+!West class methodsFor: 'no messages' stamp: 'AB 10/29/2022 16:17:42'!
+isYourCategory: aPoint
+	^(aPoint = 'W')! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:18:27' prior: 50553081!
+rotateToLeft
+	cardinalPoint rotateToLeft.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:18:45' prior: 50553104!
+rotateToRight
+	cardinalPoint rotateToRight.
+		! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:18:57' prior: 50555541!
+rotateToRight
+	cardinalPoint := cardinalPoint rotateToRight.
+		! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:19:16' prior: 50555537!
+rotateToLeft
+	cardinalPoint := cardinalPoint rotateToLeft.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:21:40' prior: 50553350!
+backward
+	(cardinalPoint isKindOf: North) ifTrue: [^(position := position - (0@1))].
+	(cardinalPoint isKindOf: East) ifTrue: [^(position := position - (1@0))].
+	(cardinalPoint isKindOf: South) ifTrue: [^(position := position + (0@1))].
+	(cardinalPoint isKindOf: West) ifTrue: [^(position := position + (1@0))].! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:22:24' prior: 50553338!
+forward
+	(cardinalPoint isKindOf: North) ifTrue: [^(position := position + (0@1))].
+	(cardinalPoint isKindOf: East) ifTrue: [^(position := position + (1@0))].
+	(cardinalPoint isKindOf: South) ifTrue: [^(position := position - (0@1))].
+	(cardinalPoint isKindOf: West) ifTrue: [^(position := position - (1@0))].! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:22:29'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:22:36'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:22:57' prior: 50553883!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: North equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:04' prior: 50553839!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: North equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:12' prior: 50553850!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: North equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:29' prior: 50553872!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: West equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:36' prior: 50553894!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: East equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:42' prior: 50553828!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: East equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:49' prior: 50553817!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: West equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:23:56' prior: 50554124!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: West equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:24:01'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:24:08'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:24:41' prior: 50555604!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: North equals: (marsrover cardinalPoint class).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:24:45'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:24:45'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:11' prior: 50555719!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:21' prior: 50555615!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: (North new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:27' prior: 50555626!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: (North new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:33' prior: 50555637!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (West new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:40' prior: 50555648!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:46' prior: 50555659!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:53' prior: 50555670!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West new) equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:25:59' prior: 50555681!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West new) equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:26:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:26:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:26:21'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:27:07' prior: 50555749!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint)).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:27:10'!
+FAILURE!
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:27:17'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:27:24' prior: 50555873!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North new = (marsrover cardinalPoint)).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:27:28'!
+FAILURE!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:27:47' prior: 50555906!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:27:50'!
+PASSED!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:28:08' prior: 50555761!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:28:21' prior: 50555773!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:28:32' prior: 50555785!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:28:44' prior: 50555797!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:28:54' prior: 50555809!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:29:03' prior: 50555821!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:29:14' prior: 50555833!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:29:16'!
+PASSED!
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:32:23'!
+forward: aPreviousPosition
+	^aPreviousPosition ! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:33:17' prior: 50556034!
+forward: aPreviousPosition
+	^aPreviousPosition + (0 @ 1).! !
+!North methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:33:49'!
+forward: aPreviousPosition
+	^aPreviousPosition + (0 @ 1).! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:34:01' prior: 50556039!
+forward: aPreviousPosition
+	^aPreviousPosition + (1 @ 0).! !
+!South methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:34:11'!
+forward: aPreviousPosition
+	^aPreviousPosition - (0 @ 1).! !
+!West methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:34:23'!
+forward: aPreviousPosition
+	^aPreviousPosition - (1 @ 0).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:34:51' prior: 50555569!
+forward
+	position := (cardinalPoint forward: position).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:34:54'!
+PASSED!
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:35:24'!
+backward: aPreviousPosition
+	^aPreviousPosition - (1 @ 0).! !
+!North methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:35:37'!
+backward: aPreviousPosition
+	^aPreviousPosition - (0 @ 1).! !
+!South methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:35:50'!
+backward: aPreviousPosition
+	^aPreviousPosition + (0 @ 1).! !
+!West methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:35:58'!
+backward: aPreviousPosition
+	^aPreviousPosition + (1 @ 0).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:36:21' prior: 50555556!
+backward
+	position := cardinalPoint backward: position.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 16:36:31' prior: 50556107!
+backward
+	position := (cardinalPoint backward: position).! !
+
+!testRun: #TestMarsRover #test01 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test02 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test03 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test04 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test05 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test06 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test07 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test08 stamp: 'AB 10/29/2022 16:36:42'!
+PASSED!
+!MarsRoverCardinalPoint methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:37:04'!
+forward: aPreviousPosition
+	self subclassResponsibility! !
+!MarsRoverCardinalPoint methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:37:09'!
+backward: aPreviousPosition
+	self subclassResponsibility! !
+!MarsRover class methodsFor: 'instance creation' stamp: 'AB 10/29/2022 16:40:45' prior: 50554329!
+initializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	^self new 
+		initializeInitializeWithThePosition: aPoint 
+		andTheCardinalPoint: (MarsRoverCardinalPoint initializeWith: aCardinalPoint). ! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:44:19'!
+test01AEmtpyCommandIsValid
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:44:25'!
+test01AEmptyCommandIsValid
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test01AEmtpyCommandIsValid stamp: 'AB 10/29/2022 16:44:33'!
+test01AEmtpyCommandIsValid
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).!
+
+!methodRemoval: TestMarsRover #test01 stamp: 'AB 10/29/2022 16:44:37'!
+test01
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:45:26'!
+test02TheCommandForwadChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test02 stamp: 'AB 10/29/2022 16:45:26'!
+test02
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:45:48'!
+test03TheCommandBackwardChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test03 stamp: 'AB 10/29/2022 16:45:48'!
+test03
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:46:04'!
+test02TheCommandForwardChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test02TheCommandForwadChangesThePosition stamp: 'AB 10/29/2022 16:46:04'!
+test02TheCommandForwadChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: (North = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:46:23'!
+test04TheCommandLeftChangesTheOrientation
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test04 stamp: 'AB 10/29/2022 16:46:23'!
+test04
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:46:40'!
+test05TheCommandRightChangesTheOrientation
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test05 stamp: 'AB 10/29/2022 16:46:40'!
+test05
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:47:12'!
+test06ACombinationOfCommandsChangesTheOrientationAndThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test06 stamp: 'AB 10/29/2022 16:47:12'!
+test06
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:47:37'!
+test06ACombinationOfCommandsChangesTheOrientation
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test06ACombinationOfCommandsChangesTheOrientationAndThePosition stamp: 'AB 10/29/2022 16:47:37'!
+test06ACombinationOfCommandsChangesTheOrientationAndThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: (East = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:48:16'!
+test07WhenChangeTheOrientationChangeThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test07 stamp: 'AB 10/29/2022 16:48:16'!
+test07
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:48:54'!
+test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test07WhenChangeTheOrientationChangeThePosition stamp: 'AB 10/29/2022 16:48:54'!
+test07WhenChangeTheOrientationChangeThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:49:23'!
+test08AWrongCommandRaiseAndError
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test08 stamp: 'AB 10/29/2022 16:49:23'!
+test08
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).!
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 16:49:35'!
+test08AWrongCommandRaiseAnError
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).! !
+
+!methodRemoval: TestMarsRover #test08AWrongCommandRaiseAndError stamp: 'AB 10/29/2022 16:49:35'!
+test08AWrongCommandRaiseAndError
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: (West = (marsrover cardinalPoint) class).!
+
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverPosition category: 'MarsRover' stamp: 'AB 10/29/2022 16:59:28'!
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverPosition category: 'MarsRover' stamp: 'AB 10/29/2022 17:00:54'!
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position cardinalPoint direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRoverPosition methodsFor: 'no messages' stamp: 'AB 10/29/2022 17:00:50'!
+foward: aPreviousPosition
+	^position + direction.! !
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:01:04'!
+forward: aPreviousPosition
+	^position + direction.! !
+
+!methodRemoval: MarsRoverPosition #foward: stamp: 'AB 10/29/2022 17:01:04'!
+foward: aPreviousPosition
+	^position + direction.!
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:01:11'!
+backward: aPreviousPosition
+	^position - direction.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:01:53' prior: 50556112!
+backward
+	! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:02:09' prior: 50554177!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^self forward].
+	(aCommand = $b) ifTrue: [^(position := (cardinalPoint backward: position))].
+	(aCommand = $l) ifTrue: [^	self rotateToLeft].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	self error: (self class commandInvalidErrorDescription).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:02:20'!
+fo! !
+
+!methodRemoval: MarsRover #forward stamp: 'AB 10/29/2022 17:02:26'!
+forward
+	position := (cardinalPoint forward: position).!
+
+!methodRemoval: MarsRover #fo stamp: 'AB 10/29/2022 17:02:28'!
+fo!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:02:44' prior: 50556517!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^(position := (cardinalPoint forward: position))].
+	(aCommand = $b) ifTrue: [^(position := (cardinalPoint backward: position))].
+	(aCommand = $l) ifTrue: [^	self rotateToLeft].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	self error: (self class commandInvalidErrorDescription).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:02:54' prior: 50555551!
+rotateToLeft
+	.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:03:04' prior: 50556538!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^(position := (cardinalPoint forward: position))].
+	(aCommand = $b) ifTrue: [^(position := (cardinalPoint backward: position))].
+	(aCommand = $l) ifTrue: [^	(cardinalPoint := cardinalPoint rotateToLeft)].
+	(aCommand = $r) ifTrue: [^self rotateToRight].
+	self error: (self class commandInvalidErrorDescription).! !
+
+!methodRemoval: MarsRover #rotateToLeft stamp: 'AB 10/29/2022 17:03:13'!
+rotateToLeft
+	.!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:03:23' prior: 50555546!
+rotateToRight
+	.
+		! !
+
+!methodRemoval: MarsRover #rotateToRight stamp: 'AB 10/29/2022 17:03:26'!
+rotateToRight
+	.
+		!
+
+!methodRemoval: MarsRover #backward stamp: 'AB 10/29/2022 17:03:29'!
+backward
+	!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:03:38' prior: 50556556!
+executeCommand: aCommand
+	(aCommand = $f) ifTrue: [^(position := (cardinalPoint forward: position))].
+	(aCommand = $b) ifTrue: [^(position := (cardinalPoint backward: position))].
+	(aCommand = $l) ifTrue: [^	(cardinalPoint := cardinalPoint rotateToLeft)].
+	(aCommand = $r) ifTrue: [^(cardinalPoint := cardinalPoint rotateToRight)].
+	self error: (self class commandInvalidErrorDescription).! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:03:42'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:03:43'!
+PASSED!
+
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverPosition category: 'MarsRover' stamp: 'AB 10/29/2022 17:04:23'!
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRoverPosition class methodsFor: 'instance creation' stamp: 'AB 10/29/2022 17:06:11'!
+initializeWithThePosition: aPoint andCardinalPoint: aCardinalPoint
+	^MarsRoverPosition new initializeWithThePosition: aPoint andCardinalPoint: aCardinalPoint.! !
+
+!classDefinition: #MarsRoverPosition category: 'MarsRover' stamp: 'AB 10/29/2022 17:06:51'!
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position direction cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:06:49'!
+initializeWithThePosition: aPoint andCardinalPoint: aCardinalPoint.
+	position := aPoint.
+	cardinalPoint := aCardinalPoint.! !
+
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverPosition category: 'MarsRover' stamp: 'AB 10/29/2022 17:06:57'!
+Object subclass: #MarsRoverPosition
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:07:03' prior: 50556508!
+backward: aPreviousPosition
+	^position - cardinalPoint.! !
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:07:08' prior: 50556499!
+forward: aPreviousPosition
+	^position + cardinalPoint.! !
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:07:28' prior: 50556680!
+forward: aPreviousPosition
+	^position + (cardinalPoint direction).! !
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:07:37' prior: 50556674!
+backward: aPreviousPosition
+	^position - (cardinalPoint direction).! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:07:56'!
+direction
+	^(1 @ 0).! !
+
+!methodRemoval: East #forward: stamp: 'AB 10/29/2022 17:08:03'!
+forward: aPreviousPosition
+	^aPreviousPosition + (1 @ 0).!
+
+!methodRemoval: East #backward: stamp: 'AB 10/29/2022 17:08:06'!
+backward: aPreviousPosition
+	^aPreviousPosition - (1 @ 0).!
+!North methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:08:16'!
+direction
+	^(0 @ 1).! !
+!South methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:08:26'!
+direction
+	^(0 @ -1).! !
+!West methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:08:33'!
+direction
+	^(-1 @ 0).! !
+
+!methodRemoval: West #forward: stamp: 'AB 10/29/2022 17:08:38'!
+forward: aPreviousPosition
+	^aPreviousPosition - (1 @ 0).!
+
+!methodRemoval: West #backward: stamp: 'AB 10/29/2022 17:08:43'!
+backward: aPreviousPosition
+	^aPreviousPosition + (1 @ 0).!
+
+!methodRemoval: South #forward: stamp: 'AB 10/29/2022 17:08:47'!
+forward: aPreviousPosition
+	^aPreviousPosition - (0 @ 1).!
+
+!methodRemoval: South #backward: stamp: 'AB 10/29/2022 17:08:50'!
+backward: aPreviousPosition
+	^aPreviousPosition + (0 @ 1).!
+
+!methodRemoval: North #backward: stamp: 'AB 10/29/2022 17:08:55'!
+backward: aPreviousPosition
+	^aPreviousPosition - (0 @ 1).!
+
+!methodRemoval: North #forward: stamp: 'AB 10/29/2022 17:08:58'!
+forward: aPreviousPosition
+	^aPreviousPosition + (0 @ 1).!
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:11:25'!
+position
+	^position! !
+
+!methodRemoval: MarsRoverPosition #position stamp: 'AB 10/29/2022 17:14:07'!
+position
+	^position!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:15:04' prior: 50556582!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	(aCommand = $f) ifTrue: [^(position := (cardinalPoint forward: position))].
+	(aCommand = $b) ifTrue: [^(position := (cardinalPoint backward: position))].
+	(aCommand = $l) ifTrue: [^	(cardinalPoint := cardinalPoint rotateToLeft)].
+	(aCommand = $r) ifTrue: [^(cardinalPoint := cardinalPoint rotateToRight)].
+	self error: (self class commandInvalidErrorDescription).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:16:31' prior: 50556750!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	(aCommand = $l) ifTrue: [cardinalPoint := marsRoverPosition rotateToLeft].
+	(aCommand = $r) ifTrue: [cardinalPoint := marsRoverPosition rotateToRight].
+	(aCommand = $f) ifTrue: [^	(cardinalPoint := cardinalPoint rotateToLeft)].
+	(aCommand = $rb) ifTrue: [^(cardinalPoint := cardinalPoint rotateToRight)].
+	self error: (self class commandInvalidErrorDescription).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:18:08' prior: 50556769!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(cardinalPoint := marsRoverPosition backward)].
+	self error: (self class commandInvalidErrorDescription).! !
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:18:20'!
+backward
+	^position - (cardinalPoint direction).! !
+
+!methodRemoval: MarsRoverPosition #backward: stamp: 'AB 10/29/2022 17:18:24'!
+backward: aPreviousPosition
+	^position - (cardinalPoint direction).!
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:18:28'!
+forward
+	^position + (cardinalPoint direction).! !
+
+!methodRemoval: MarsRoverPosition #forward: stamp: 'AB 10/29/2022 17:18:31'!
+forward: aPreviousPosition
+	^position + (cardinalPoint direction).!
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:18:39'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:18:39'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:18:39'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:18:39'!
+ERROR!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:18:39'!
+ERROR!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:18:39'!
+ERROR!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:18:40'!
+ERROR!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:18:40'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:18:47'!
+FAILURE!
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:19:23' prior: 50556696!
+direction
+	^(1 @ 0).! !
+
+!methodRemoval: MarsRoverCardinalPoint #backward: stamp: 'AB 10/29/2022 17:20:28'!
+backward: aPreviousPosition
+	self subclassResponsibility!
+
+!methodRemoval: MarsRoverCardinalPoint #forward: stamp: 'AB 10/29/2022 17:20:30'!
+forward: aPreviousPosition
+	self subclassResponsibility!
+!MarsRoverCardinalPoint methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:20:43'!
+direction
+	self subclassResponsibility.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:21:07' prior: 50556788!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(cardinalPoint := marsRoverPosition backward)].
+	
+	self error: (self class commandInvalidErrorDescription).! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:21:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:21:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:21:32'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:21:32'!
+ERROR!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:21:32'!
+ERROR!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:21:32'!
+ERROR!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:21:32'!
+ERROR!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:21:32'!
+FAILURE!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:21:40'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:21:48'!
+ERROR!
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:22:09'!
+rotateToLeft
+	^cardinalPoint rotateToLeft.! !
+!MarsRoverPosition methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:22:17'!
+rotateToRight
+	^cardinalPoint rotateToRight.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:22:26'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:22:26'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:22:26'!
+FAILURE!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:22:57' prior: 50556873!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(position := marsRoverPosition backward)].
+	
+	self error: (self class commandInvalidErrorDescription).! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:23:00'!
+PASSED!
+!MarsRover methodsFor: 'atributes' stamp: 'AB 10/29/2022 17:27:07' prior: 50552387!
+cardinalPoint
+	^cardinalPoint asString.! !
+!East methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:27:25' overrides: 16901837!
+asString
+	^'E'! !
+!North methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:27:36' overrides: 16901837!
+asString
+	^'N'! !
+!South methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:27:45' overrides: 16901837!
+asString
+	^'S'! !
+!West methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:27:59' overrides: 16901837!
+asString
+	^'W'! !
+!MarsRoverCardinalPoint methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:28:11' overrides: 16901837!
+asString
+	self subclassResponsibility.! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:28:52' prior: 50556168!
+test01AEmptyCommandIsValid
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'N' equals:( marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:01' prior: 50556245!
+test02TheCommandForwardChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: 'N' equals:( marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:07' prior: 50556223!
+test03TheCommandBackwardChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: 'N' equals:( marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:10' prior: 50557066!
+test03TheCommandBackwardChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:19' prior: 50557054!
+test02TheCommandForwardChangesThePosition
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:26' prior: 50557042!
+test01AEmptyCommandIsValid
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'N' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:34' prior: 50556269!
+test04TheCommandLeftChangesTheOrientation
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:45' prior: 50556291!
+test05TheCommandRightChangesTheOrientation
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:29:55' prior: 50556336!
+test06ACombinationOfCommandsChangesTheOrientation
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsrover position).
+	self assert: 'E' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:30:06' prior: 50556384!
+test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	marsrover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+!TestMarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/29/2022 17:30:18' prior: 50556440!
+test08AWrongCommandRaiseAnError
+	| marsrover |
+	marsrover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.
+	self should: [marsrover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsrover position).
+	self assert: 'W' equals: (marsrover cardinalPoint).! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:30:21'!
+PASSED!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:31:53' prior: 50553957!
+executeCommands: aStringOfCommands
+	aStringOfCommands do: [:aCommand | self executeCommand: aCommand ].! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:31:55'!
+PASSED!
+!MarsRover class methodsFor: 'instance creation' stamp: 'AB 10/29/2022 17:38:19'!
+initializeMovementCommands
+	! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 17:38:56'!
+initializeMovementCommands
+	! !
+
+!methodRemoval: MarsRover class #initializeMovementCommands stamp: 'AB 10/29/2022 17:39:00'!
+initializeMovementCommands
+	!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 17:39:12' prior: 50552407!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	position := aPoint.
+	cardinalPoint := aCardinalPoint.
+	self initializeMovementCommands.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:39:37' prior: 50556968!
+executeCommand: aCommand
+	aCommand execute.
+	self error: (self class commandInvalidErrorDescription).! !
+
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverCommands category: 'MarsRover' stamp: 'AB 10/29/2022 17:40:50'!
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Forward category: 'MarsRover' stamp: 'AB 10/29/2022 17:41:18'!
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Backward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Backward category: 'MarsRover' stamp: 'AB 10/29/2022 17:41:22'!
+MarsRoverCommands subclass: #Backward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Left category: 'MarsRover' stamp: 'AB 10/29/2022 17:41:24'!
+MarsRoverCommands subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #Right category: 'MarsRover' stamp: 'AB 10/29/2022 17:41:27'!
+MarsRoverCommands subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverCommands category: 'MarsRover' stamp: 'AB 10/29/2022 17:41:39'!
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Backward stamp: 'AB 10/29/2022 17:42:33'!
+MarsRoverCommands subclass: #Backward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Forward stamp: 'AB 10/29/2022 17:42:39'!
+MarsRoverCommands subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Left stamp: 'AB 10/29/2022 17:42:46'!
+MarsRoverCommands subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #Right stamp: 'AB 10/29/2022 17:43:54'!
+MarsRoverCommands subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!methodRemoval: MarsRover #initializeMovementCommands stamp: 'AB 10/29/2022 17:44:37'!
+initializeMovementCommands
+	!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:46:33' prior: 50557262!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(position := marsRoverPosition backward)].
+	
+	self error: (self class commandInvalidErrorDescription).! !
+
+!classRemoval: #MarsRoverCommands stamp: 'AB 10/29/2022 17:46:45'!
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:46:47'!
+ERROR!
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:46:54'!
+ERROR!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 17:47:12' prior: 50557254!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	position := aPoint.
+	cardinalPoint := aCardinalPoint.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:47:18'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:47:18'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:47:18'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:47:18'!
+FAILURE!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:47:18'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:47:18'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:47:18'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:47:18'!
+FAILURE!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:47:25'!
+FAILURE!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 17:47:51' prior: 50557368!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(position := marsRoverPosition backward)].
+	
+	self error: (self class commandInvalidErrorDescription).! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 17:47:57'!
+PASSED!
+
+----SNAPSHOT----(29 October 2022 17:48:14) mars-rover.image priorSource: 7059896!
+
+!classDefinition: #TestMarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 17:50:11'!
+TestCase subclass: #TestMarsRover
+	instanceVariableNames: 'marsRover'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:50:06' overrides: 16961394!
+setUp
+	marsRover := MarsRover initializeWithThePosition: (1 @ 3) andCardinalPoint: 'N'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:50:30' prior: 50557102!
+test01AEmptyCommandIsValid
+	marsRover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:50:43' prior: 50557090!
+test02TheCommandForwardChangesThePosition
+	marsRover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:50:52' prior: 50557078!
+test03TheCommandBackwardChangesThePosition
+	marsRover executeCommands: 'b'.
+	self assert: (1 @ 2) equals: (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:51:01' prior: 50557114!
+test04TheCommandLeftChangesTheOrientation
+	marsRover executeCommands: 'l'.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'W' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:51:11' prior: 50557126!
+test05TheCommandRightChangesTheOrientation
+	marsRover executeCommands: 'r'.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'E' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:51:19' prior: 50557138!
+test06ACombinationOfCommandsChangesTheOrientation
+	marsRover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'E' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:51:27' prior: 50557151!
+test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent
+	marsRover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsRover position).
+	self assert: 'W' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:51:41' prior: 50557164!
+test08AWrongCommandRaiseAnError
+	self should: [marsRover executeCommands: 'lfñbr'] 
+		raise: Error  
+		withExceptionDo: [:anError | self assert: (MarsRover commandInvalidErrorDescription) equals: (anError messageText)].
+	self assert: (0 @ 3) equals: (marsRover position).
+	self assert: 'W' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:54:51'!
+m1
+
+	marsRover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint)! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:54:51' prior: 50557526!
+test01AEmptyCommandIsValid
+	self m1.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:56:30'!
+assertTheCommandsSequence: aStringOfCommnads produceThePosition: aPoint andTheCardinalPoint: aCardinalPoint
+	marsRover executeCommands: aStringOfCommnads.
+	self assert: aPoint equals: (marsRover position).
+	self assert: aCardinalPoint equals: (marsRover cardinalPoint)! !
+
+!methodRemoval: TestMarsRover #m1 stamp: 'AB 10/29/2022 17:56:38'!
+m1
+
+	marsRover executeCommands: ''.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint)!
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:57:16' prior: 50557609!
+test01AEmptyCommandIsValid
+	self assertTheCommandsSequence: '' produceThePosition: (1 @ 3) andTheCardinalPoint: 'N'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:57:34'!
+m1
+
+	marsRover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint)! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:57:34' prior: 50557534!
+test02TheCommandForwardChangesThePosition
+	self m1.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:57:40' prior: 50557645!
+test02TheCommandForwardChangesThePosition
+	marsRover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint).! !
+
+!methodRemoval: TestMarsRover #m1 stamp: 'AB 10/29/2022 17:57:45'!
+m1
+
+	marsRover executeCommands: 'f'.
+	self assert: (1 @ 4) equals:  (marsRover position).
+	self assert: 'N' equals: (marsRover cardinalPoint)!
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:58:31' prior: 50557650!
+test02TheCommandForwardChangesThePosition
+	self assertTheCommandsSequence: 'f' produceThePosition: (1 @ 4) andTheCardinalPoint: 'N'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:58:48' prior: 50557543!
+test03TheCommandBackwardChangesThePosition
+	self assertTheCommandsSequence: 'b' produceThePosition: (1 @ 2) andTheCardinalPoint: 'N'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:59:08' prior: 50557552!
+test04TheCommandLeftChangesTheOrientation
+	self assertTheCommandsSequence: 'l' produceThePosition: (1 @ 3) andTheCardinalPoint: 'W'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:59:28' prior: 50557561!
+test05TheCommandRightChangesTheOrientation
+	self assertTheCommandsSequence: 'r' produceThePosition: (1 @ 3) andTheCardinalPoint: 'E'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:59:38' prior: 50557570!
+test06ACombinationOfCommandsChangesTheOrientation
+	marsRover executeCommands: 'rrl'.
+	self assert: (1 @ 3) equals: (marsRover position).
+	self assert: 'E' equals: (marsRover cardinalPoint).
+	self assertTheCommandsSequence: 'rrl' produceThePosition: (1 @ 4) andTheCardinalPoint: 'N'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 17:59:52' prior: 50557693!
+test06ACombinationOfCommandsChangesTheOrientation
+	self assertTheCommandsSequence: 'rrl' produceThePosition: (1 @ 3) andTheCardinalPoint: 'E'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 18:00:00' prior: 50557579!
+test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent
+	marsRover executeCommands: 'lf'.
+	self assert: (0 @ 3) equals: (marsRover position).
+	self assert: 'W' equals: (marsRover cardinalPoint).! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 18:00:22' prior: 50557713!
+test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent
+	self assertTheCommandsSequence: 'lf' produceThePosition: (0 @ 3) andTheCardinalPoint: 'W'.! !
+!TestMarsRover methodsFor: 'tests' stamp: 'AB 10/29/2022 18:01:28' prior: 50557520 overrides: 16961394!
+setUp
+	marsRover := MarsRover initializeWithThePosition: (1 @ 3) andTheCardinalPoint: 'N'.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:01:31'!
+PASSED!
+
+----SNAPSHOT----(29 October 2022 18:08:03) mars-rover.image priorSource: 7227485!
+
+a := 1.
+!
+
+b := [a := 2].!
+
+b value.!
+
+b value.!
+
+a!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:16:53' prior: 50557463!
+executeCommand: aCommand
+	aCommand value.
+	"| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(position := marsRoverPosition backward)].
+	
+	self error: (self class commandInvalidErrorDescription).
+	"! !
+
+!classDefinition: #MarsRoverCommand category: 'MarsRover' stamp: 'AB 10/29/2022 18:17:50'!
+Object subclass: #MarsRoverCommand
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:17:44' prior: 50557208!
+executeCommands: aStringOfCommands
+	aStringOfCommands do: [:aPosibleCommand | 
+		| aCommand |
+		aCommand := MarsRoverCommand initializeWith: aPosibleCommand.
+		self executeCommand: aCommand 
+	].! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:18:04' prior: 50557796!
+executeCommands: aStringOfCommands
+	aStringOfCommands do: [:aPosibleCommand | 
+		| aCommand |
+		aCommand := MarsRoverCommand initializeWith: aPosibleCommand.
+		self executeCommand: aCommand.
+	].! !
+
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverCommands category: 'MarsRover' stamp: 'AB 10/29/2022 18:21:05'!
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #MarsRoverPositionCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverPositionCommands category: 'MarsRover' stamp: 'AB 10/29/2022 18:21:23'!
+MarsRoverCommands subclass: #MarsRoverPositionCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+MarsRoverCommands subclass: #MarsRoverPositionCommands
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classDefinition: #MarsRoverPositionCommands category: 'MarsRover' stamp: 'AB 10/29/2022 18:21:33'!
+MarsRoverCommands subclass: #MarsRoverPositionCommands
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #MarsRoverPositionCommands stamp: 'AB 10/29/2022 18:22:51'!
+MarsRoverCommands subclass: #MarsRoverPositionCommands
+	instanceVariableNames: 'position cardinalPoint'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+
+!classRemoval: #MarsRoverCommands stamp: 'AB 10/29/2022 18:22:54'!
+Object subclass: #MarsRoverCommands
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:23:11' prior: 50557769!
+executeCommand: aCommand
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	(aCommand = $r) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	(aCommand = $l) ifTrue: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	
+	(aCommand = $f) ifTrue: [^(position := marsRoverPosition forward)].
+	(aCommand = $b) ifTrue: [^(position := marsRoverPosition backward)].
+	
+	self error: (self class commandInvalidErrorDescription).! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:23:32' prior: 50557805!
+executeCommands: aStringOfCommands
+	aStringOfCommands do: [:aCommand | self executeCommand: aCommand].! !
+
+!classDefinition: #MarsRover category: 'MarsRover' stamp: 'AB 10/29/2022 18:24:34'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'position cardinalPoint listOfCommands'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:24:32'!
+initializePositionCommands
+	listOfCommands := OrderedCollection new.! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:25:53' prior: 50557899!
+initializePositionCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands at: $r put: [].
+	listOfCommands at: $l put: [].
+	listOfCommands at: $b put: [].
+	listOfCommands at: $f put: [].! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:26:00'!
+initializeCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands at: $r put: [].
+	listOfCommands at: $l put: [].
+	listOfCommands at: $b put: [].
+	listOfCommands at: $f put: [].! !
+
+!methodRemoval: MarsRover #initializePositionCommands stamp: 'AB 10/29/2022 18:26:03'!
+initializePositionCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands at: $r put: [].
+	listOfCommands at: $l put: [].
+	listOfCommands at: $b put: [].
+	listOfCommands at: $f put: [].!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:27:27' prior: 50557914!
+initializeCommands
+	| marsRoverPosition |
+	
+	listOfCommands := Dictionary new.
+	
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	listOfCommands at: $r put: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	listOfCommands at: $l put: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	listOfCommands at: $b put: [^(position := marsRoverPosition backward)].
+	listOfCommands at: $f put: [^(position := marsRoverPosition forward)].! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:27:39' prior: 50557932!
+initializeCommands
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	listOfCommands := Dictionary new.
+	
+	listOfCommands at: $r put: [^(cardinalPoint := marsRoverPosition rotateToRight)].
+	listOfCommands at: $l put: [^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	listOfCommands at: $b put: [^(position := marsRoverPosition backward)].
+	listOfCommands at: $f put: [^(position := marsRoverPosition forward)].! !
+
+a at: 'B'!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:28:40' prior: 50557866!
+executeCommand: aCommand
+	[]
+	self error: (self class commandInvalidErrorDescription).! !
+
+a :=  Dictionary new.!
+
+a add: 'B'->1.!
+
+a at: 'B'!
+
+a at: 'B'!
+
+a at: 'B'!
+
+a add: 'B'->2.!
+
+a at: 'B'!
+
+!classRemoval: #MarsRoverCommand stamp: 'AB 10/29/2022 18:31:58'!
+Object subclass: #MarsRoverCommand
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'MarsRover'!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:32:46' prior: 50557951!
+initializeCommands
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[^(cardinalPoint := marsRoverPosition rotateToRight)].
+	listOfCommands add: $l->[^(cardinalPoint := marsRoverPosition rotateToLeft)].
+	listOfCommands add: $b->[^(position := marsRoverPosition backward)].
+	listOfCommands add: $f->[^(position := marsRoverPosition forward)].! !
+
+a at: 'C'!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:34:30' prior: 50557970!
+executeCommand: aCommand
+	[listOfCommands includesKey: aCommand] ifFalse: [^self error: (self class commandInvalidErrorDescription)].
+	^(listOfCommands at: aCommand) value.! !
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:34:31' prior: 50558005!
+executeCommand: aCommand
+	[listOfCommands includesKey: aCommand] ifFalse: [^self error: (self class commandInvalidErrorDescription)].
+	(listOfCommands at: aCommand) value.! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:34:49' prior: 50557424!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	position := aPoint.
+	cardinalPoint := aCardinalPoint.
+	self initializeCommands.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:35:05'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:35:05'!
+ERROR!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:35:05'!
+ERROR!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:35:05'!
+ERROR!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:35:05'!
+ERROR!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:35:05'!
+ERROR!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:35:05'!
+ERROR!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:35:05'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:35:12'!
+ERROR!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:35:25' prior: 50558014!
+executeCommand: aCommand
+	(listOfCommands includesKey: aCommand) ifFalse: [^self error: (self class commandInvalidErrorDescription)].
+	(listOfCommands at: aCommand) value.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:35:31'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:35:31'!
+ERROR!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:35:31'!
+ERROR!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:35:31'!
+ERROR!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:35:31'!
+ERROR!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:35:31'!
+ERROR!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:35:31'!
+ERROR!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:35:31'!
+FAILURE!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:35:37'!
+ERROR!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:35:59' prior: 50557986!
+initializeCommands
+	| marsRoverPosition |
+	marsRoverPosition := MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint.
+	
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := marsRoverPosition rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := marsRoverPosition rotateToLeft)].
+	listOfCommands add: $b->[(position := marsRoverPosition backward)].
+	listOfCommands add: $f->[(position := marsRoverPosition forward)].! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:36:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:36:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:36:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:36:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:36:02'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:36:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:36:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:36:02'!
+FAILURE!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:36:10'!
+FAILURE!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:36:30' prior: 50558062!
+executeCommand: aCommand
+	(listOfCommands includesKey: aCommand) ifFalse: [^self error: (self class commandInvalidErrorDescription)].
+	^(listOfCommands at: aCommand) value.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:36:40'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:36:41'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:36:41'!
+FAILURE!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:36:41'!
+FAILURE!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:36:41'!
+FAILURE!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:38:48' prior: 50558102!
+initializeCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToLeft)].
+	listOfCommands add: $b->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) backward)].
+	listOfCommands add: $f->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) forward)].! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:38:52'!
+PASSED!
+!MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:39:01' prior: 50558152!
+executeCommand: aCommand
+	(listOfCommands includesKey: aCommand) ifFalse: [^self error: (self class commandInvalidErrorDescription)].
+	(listOfCommands at: aCommand) value.! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/29/2022 18:39:04'!
+PASSED!
+
+----SNAPSHOT----(29 October 2022 20:36:54) mars-rover.image priorSource: 7235633!
