@@ -60,20 +60,24 @@ Object subclass: #MarsRover
 	poolDictionaries: ''
 	category: 'MarsRover'!
 
-!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:38:48'!
-initializeCommands
-	listOfCommands := Dictionary new.
-	
-	listOfCommands add: $r->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToRight)].
-	listOfCommands add: $l->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToLeft)].
-	listOfCommands add: $b->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) backward)].
-	listOfCommands add: $f->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) forward)].! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:57:32'!
+createMarsRoverPosition
+	^(MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint)! !
 
-!MarsRover methodsFor: 'initialization' stamp: 'AB 10/29/2022 18:34:49'!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:56:15'!
 initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
 	position := aPoint.
 	cardinalPoint := aCardinalPoint.
-	self initializeCommands.! !
+	self initializePositionCommands.! !
+
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:58:34'!
+initializePositionCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := (self createMarsRoverPosition) rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := (self createMarsRoverPosition) rotateToLeft)].
+	listOfCommands add: $b->[(position := (self createMarsRoverPosition) backward)].
+	listOfCommands add: $f->[(position := (self createMarsRoverPosition) forward)].! !
 
 
 !MarsRover methodsFor: 'commands' stamp: 'AB 10/29/2022 18:39:01'!

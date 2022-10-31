@@ -4081,3 +4081,97 @@ PASSED!
 PASSED!
 
 ----SNAPSHOT----(29 October 2022 20:36:54) mars-rover.image priorSource: 7235633!
+
+----STARTUP---- (31 October 2022 15:54:24) as /home/abarbalase/cuis-university/mars-rover.image!
+
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:56:15'!
+initializePositionCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToLeft)].
+	listOfCommands add: $b->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) backward)].
+	listOfCommands add: $f->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) forward)].! !
+!MarsRover methodsFor: 'as yet unclassified' stamp: 'AB 10/31/2022 15:56:15' prior: 50558023!
+initializeInitializeWithThePosition: aPoint andTheCardinalPoint: aCardinalPoint 
+	position := aPoint.
+	cardinalPoint := aCardinalPoint.
+	self initializePositionCommands.! !
+
+!methodRemoval: MarsRover #initializeCommands stamp: 'AB 10/31/2022 15:56:15'!
+initializeCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToLeft)].
+	listOfCommands add: $b->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) backward)].
+	listOfCommands add: $f->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) forward)].!
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:57:05' prior: 50558280!
+initializePositionCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) rotateToLeft)].
+	listOfCommands add: $b->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) backward)].
+	listOfCommands add: $f->[(position := (MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint) forward)].! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:57:32'!
+createMarsRoverPosition
+	^(MarsRoverPosition initializeWithThePosition: position andCardinalPoint: cardinalPoint)! !
+!MarsRover methodsFor: 'initialization' stamp: 'AB 10/31/2022 15:58:34' prior: 50558334!
+initializePositionCommands
+	listOfCommands := Dictionary new.
+	
+	listOfCommands add: $r->[(cardinalPoint := (self createMarsRoverPosition) rotateToRight)].
+	listOfCommands add: $l->[(cardinalPoint := (self createMarsRoverPosition) rotateToLeft)].
+	listOfCommands add: $b->[(position := (self createMarsRoverPosition) backward)].
+	listOfCommands add: $f->[(position := (self createMarsRoverPosition) forward)].! !
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/31/2022 15:58:38'!
+PASSED!
+
+!testRun: #TestMarsRover #test01AEmptyCommandIsValid stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test02TheCommandForwardChangesThePosition stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test03TheCommandBackwardChangesThePosition stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test04TheCommandLeftChangesTheOrientation stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test05TheCommandRightChangesTheOrientation stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test06ACombinationOfCommandsChangesTheOrientation stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test07WhenChangeTheOrientationTheChangeOfPositionIsDifferent stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+!testRun: #TestMarsRover #test08AWrongCommandRaiseAnError stamp: 'AB 10/31/2022 16:03:32'!
+PASSED!
+
+----SNAPSHOT----(31 October 2022 16:03:51) mars-rover.image priorSource: 7251938!
