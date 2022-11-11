@@ -397,9 +397,9 @@ AccountComponent subclass: #Portfolio
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
 
-!Portfolio methodsFor: 'main protocol' stamp: 'AB 11/9/2022 13:20:34'!
+!Portfolio methodsFor: 'main protocol' stamp: 'AB 11/11/2022 16:22:33'!
 addAccount: aNewAccount
-	(self isPossibleAdd: aNewAccount)	 ifFalse: [^self error: 'Cannot add this account in portfolio'].
+	(self isPossibleAdd: aNewAccount)	 ifFalse: [^self error: self class cannotAddThisAccountInPortfolioErrorDescription].
 	accounts add: aNewAccount.
 	aNewAccount setParent: self.! !
 
