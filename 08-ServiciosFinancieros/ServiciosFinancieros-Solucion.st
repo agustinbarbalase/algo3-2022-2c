@@ -820,8 +820,9 @@ hasRegistered: aTransaction
 
 	^accounts anySatisfy: [ :anAccount | anAccount hasRegistered: aTransaction ]! !
 
-!Portfolio methodsFor: 'main protocol' stamp: 'AB 11/16/2022 10:51:09'!
+!Portfolio methodsFor: 'main protocol' stamp: 'AB 11/18/2022 10:43:41'!
 name
+	(name) ifNil: [^('Anonymous ', self class asString)].
 	^name! !
 
 !Portfolio methodsFor: 'main protocol' stamp: 'HAW 5/25/2019 11:38:32'!
@@ -987,8 +988,9 @@ hasRegistered: aTransaction
 	^ transactions includes: aTransaction 
 ! !
 
-!ReceptiveAccount methodsFor: 'main protocol' stamp: 'AB 11/16/2022 10:47:22'!
+!ReceptiveAccount methodsFor: 'main protocol' stamp: 'AB 11/18/2022 10:43:29'!
 name
+	(name) ifNil: [^('Anonymous ', self class asString)].
 	^name! !
 
 !ReceptiveAccount methodsFor: 'main protocol' stamp: 'HernanWilkinson 7/13/2011 18:37'!
@@ -1119,9 +1121,9 @@ initializeFor: aPortfolio
 	summary := OrderedCollection new.! !
 
 
-!DetailedTreePrinter methodsFor: 'main protocol' stamp: 'AB 11/17/2022 18:18:26'!
+!DetailedTreePrinter methodsFor: 'main protocol' stamp: 'AB 11/18/2022 10:44:37'!
 generate
-	summary add: (self createValidName: portfolio).
+	summary add: (portfolio name).
 	portfolio accountDo: [:anAccount | anAccount accept: self].
 	summary add: ('  Balance = ', portfolio balance asString).
 	^summary.! !
@@ -1133,18 +1135,12 @@ visitPortfolio: aPortfolio
 		summary add: ('  ', DetailedTreePrinterLine	)
 	]! !
 
-!DetailedTreePrinter methodsFor: 'visitor' stamp: 'AB 11/17/2022 18:17:04'!
+!DetailedTreePrinter methodsFor: 'visitor' stamp: 'AB 11/18/2022 10:44:57'!
 visitReceptiveAccount: aReceptiveAccount
-	summary add: ('  ', (self createValidName: (aReceptiveAccount))).
+	summary add: ('  ', (aReceptiveAccount name)).
 	((AccountSummary for: aReceptiveAccount) generate) do: [:aTransaction |
 		summary add: ('    ', aTransaction).	
 	]! !
-
-
-!DetailedTreePrinter methodsFor: 'valid' stamp: 'AB 11/17/2022 18:20:01'!
-createValidName: anAccount
-	(anAccount name) ifNil: [^('Anonymous ', anAccount class asString)].
-	^anAccount name asString! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -1239,9 +1235,9 @@ initializeFor: aPortfolio
 	summary := OrderedCollection new.! !
 
 
-!TreePrinter methodsFor: 'main protocol' stamp: 'AB 11/17/2022 18:25:32'!
+!TreePrinter methodsFor: 'main protocol' stamp: 'AB 11/18/2022 10:44:00'!
 generate
-	summary add: (self createValidName: portfolio).
+	summary add: (portfolio name).
 	portfolio accountDo: [:anAccount | anAccount accept: self].
 	^summary.! !
 
@@ -1252,15 +1248,9 @@ visitPortfolio: aPortfolio
 		summary add: ('  ', anTreePrinterLine).	
 	]! !
 
-!TreePrinter methodsFor: 'visitor' stamp: 'AB 11/17/2022 18:26:42'!
+!TreePrinter methodsFor: 'visitor' stamp: 'AB 11/18/2022 10:44:20'!
 visitReceptiveAccount: aReceptiveAccount
-	summary add: ('  ', (self createValidName: aReceptiveAccount)).	! !
-
-
-!TreePrinter methodsFor: 'valid' stamp: 'AB 11/17/2022 18:25:15'!
-createValidName: anAccount
-	(anAccount name) ifNil: [^('Anonymous ', anAccount class asString)].
-	^anAccount name asString! !
+	summary add: ('  ', (aReceptiveAccount name)).	! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
